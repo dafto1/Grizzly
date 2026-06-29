@@ -5,6 +5,8 @@ import StarterKit from "@tiptap/starter-kit"
 import TaskItem from '@tiptap/extension-task-item'; 
 import TaskList from '@tiptap/extension-task-list'; 
 import Table from '@tiptap/extension-table'; 
+import TextStyle from '@tiptap/extension-text-style'; 
+import FontFamily from "@tiptap/extension-font-family"
 import TableCell from '@tiptap/extension-table-cell'; 
 import TableRow from '@tiptap/extension-table-row'; 
 import { TableHeader } from "@tiptap/extension-table-header"; 
@@ -49,6 +51,8 @@ export const Editor = () => {
       }
     } , 
     extensions: [StarterKit,
+      FontFamily, 
+      TextStyle , 
       TaskItem.configure({ nested: true }),
       TaskList,
       Table, 
